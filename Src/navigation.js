@@ -20,11 +20,11 @@ const api = axios.create({
     });
 
 //Declaración de objetos que voy a traer del DOM (Pueden cambiarse luego llevandolos a una función o sacando los que ya están en una función, a analizar luego)
-const hashEnterNow = document.querySelector(".enterNow-link")
+const closeArrow = document.querySelector("#close-arrow")
 const logOutBtn = document.querySelector(".log-out")
 //Añadir Eventlisteners para poder cambiar de Hash entre vista de log-in y main page
 logOutBtn.addEventListener("click", logOut)
-hashEnterNow.addEventListener('click', validatorHash);
+closeArrow.addEventListener('click', validatorHash);
 //Comienzo de código
 function logOut() {
     scrollTo(top);
