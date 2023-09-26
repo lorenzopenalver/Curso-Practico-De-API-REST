@@ -31,7 +31,7 @@ function logOut() {
     location.hash = "#log-in"
 }
 function validatorHash() {
-
+    scrollTo(top);
     location.hash = "#home"
 }
 
