@@ -1,19 +1,10 @@
 
 
 const API_Key = "eb61c5c519a55c105e0e93fe49b04c93";
-/* const API_URL = `https://api.themoviedb.org/3/movie/${a}?`; */
-//const popular_API = `https://api.themoviedb.org/3/person/popular?language=en-US&page=1&api_key=${API_Key}`
-const movieAmount_API = `https://api.themoviedb.org/3/discover/tv?include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=popularity.asc%27&api_key=${API_Key}`
 const imagesLoad = "https://image.tmdb.org/t/p/w300"
 const API_movies = `discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc`
 const API_series = `tv/top_rated?language=en-US&page=1`
-const genres = `genre/`
 
-const mainPage = document.querySelector(".main-page")
-const seriesCatAmount = document.querySelector(".main-page-series-category")
-const animeCatAmount = document.querySelector(".main-page-anime-category")
-const firstTimePage = document.querySelector(".first-time-container")
-const selectedMoviePage = document.querySelector(".selected-movie")
 const tvRecommendations = document.querySelector(".tv-recommendations")
 const api = axios.create({
 baseURL: "https://api.themoviedb.org/3/",

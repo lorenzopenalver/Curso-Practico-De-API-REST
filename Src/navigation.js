@@ -59,10 +59,10 @@ function navigator() {
         tvPage();
     } else if (location.hash.startsWith("#Category=")) {
         category();
-    } else if (location.hash.startsWith("#log-in")) {
-        logIn();
-    } else {
+    } else if (location.hash.startsWith("#home")) {
         homePage();
+    } else {
+        logIn();
         
     };
 };
