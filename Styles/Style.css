@@ -200,7 +200,7 @@ font-family: 'Fira Sans', sans-serif;
     display: flex;
     gap: 15px;
     overflow-x:scroll;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 1.6rem;
     font-weight: 500;
     font-family: 'Fira Sans', sans-serif;
