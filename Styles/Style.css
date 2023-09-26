@@ -241,6 +241,7 @@ font-family: 'Fira Sans', sans-serif;
     padding-bottom: 50px;
     z-index: 3;
     position:sticky;
+  
 }
 
 
@@ -249,6 +250,8 @@ font-family: 'Fira Sans', sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    box-shadow: 0px -34px 15px 16px  rgba(0, 0, 0, 0.82);
+
    
 }
 .selected-movie-text h1{
