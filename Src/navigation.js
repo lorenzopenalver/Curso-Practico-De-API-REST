@@ -62,7 +62,7 @@ function navigator() {
     } else if (location.hash.startsWith("#home")) {
         homePage();
     } else {
-        logIn();
+        logIn();    
         
     };
 };
