@@ -13,7 +13,19 @@
 </head>
 
 <body>
-
+    <div> <img id="close-arrow" src="./imgs/right-arrow-svgrepo-com.svg" alt=""></div>
+    <header>
+        <section class="header-items"><img src="./imgs/icons8-menu.svg" alt=""> <h1>CANTERAvana</h1></section>
+      
+        <section class="menu-container">
+            <h1 class="home-title">Home 🏠</h1>
+            <h1 class="trends-title">Trends 🔥</h1>
+            <button class="log-out">Log Out</button>
+        </section>
+        
+      
+    </header>
+    
     <main class="first-time-container inactive">
         <section class="banners-container">
             <div><img src="./imgs/HaikyuuBanner.jpg" alt=""></div>
@@ -26,24 +38,34 @@
             <div class="btn"><button class="enterNow-link">Enter now</button></div>
         </section>
     </main>
-    <main class="main-page inactive">
-        <button class="log-out">Log Out</button>
+    <main class="main-page">
+   
         <section class="upperSection-content">
             <h3 class="searchContent-text">Search for a content</h3>
-            <input type="text" placeholder="Search for a content">
-        
+            <form>
+                <input class="input" type="text" name="search=" placeholder="Search for a content">
+                <button name="search=" class="send-btn">Enviar</button>
+            </form>
+
+
+        </section>
+        <section class="search-results">
+
         </section>
         <section class="main-page-categories">
-            <div class="main-page-series-category"></div>
-            <div class="main-page-anime-category"></div><img class="tsunayoshi" src="./imgs/TsunaSawada.png"
-                alt="Tsunayoshi Sawada">
-            <img class="miles" src="./imgs/milesMorales-removebg-preview.png" alt="Miles Morales">
+            <div class="main-page-categories-items">
+                <div class="main-page-series-category"></div>
+                <div class="main-page-anime-category"></div><img class="tsunayoshi" src="./imgs/TsunaSawada.png"
+                    alt="Tsunayoshi Sawada">
+                <img class="miles" src="./imgs/milesMorales-removebg-preview.png" alt="Miles Morales">
+            </div>
+            
         </section>
 
         <section class="main-page-recoommendations">
             <h1>Best Movies</h1>
             <section class="recommendations-container">
-            <!--     <div><img src="./imgs/Recomended/One_Piece_Serie.jpg" alt="">
+                <!--     <div><img src="./imgs/Recomended/One_Piece_Serie.jpg" alt="">
                     <h3>Name</h3>
                     <p>2002</p>
                 </div>
@@ -76,22 +98,29 @@
             <section class="recommendations-container tv-recommendations"></section>
         </section>
         <h1 class="cat-title">Categories</h1>
+        <div class="category-view">
+            <div class="category-view-container"></div>
+
+        </div>
         <article class="category-container-list">
-            
-         <!--  <div class="category-container"> 
+
+            <!--  <div class="category-container"> 
             <h3 id="" class="category-title"></h3>
           </div> -->
         </article>
     </main>
     <main class="selected-movie inactive">
-       
+
         <section class="selected-movie-img">
-            <div> <img id="close-arrow" src="./imgs/right-arrow-svgrepo-com.svg" alt=""></div><!-- <img src="./imgs/Recomended/One_Piece_Serie.jpg" alt=""> --></section>
+            
+            <!-- <img src="./imgs/Recomended/One_Piece_Serie.jpg" alt=""> -->
+        </section>
         <section class="selected-movie-description">
             <section class="selected-movie-text">
                 <div class="serie-details">
                     <h1>One Piece
-                    </h1><p class="serie-details-date"></p><br>
+                    </h1>
+                    <p class="serie-details-date"></p><br>
                     <p class="serie-details-popularity"></p>
                 </div>
                 <div class="rating-text">
@@ -101,7 +130,7 @@
             </section>
             <p class="selectec-movie-description-main-text"></p>
             <section class="selected-movie-categories">
-             <!--    <div>
+                <!--    <div>
                     <a href="#">⚔️Action</a>
                     <a href="#">🤣Comedy</a>
                 </div>
@@ -116,9 +145,22 @@
 
 
     </main>
+  <!--   <main class="search-content-container">
+        <section class="search-content-items">
+            <h1>Results</h1>
+            <h3 class="searchContent-text">Search for a content</h3>
+            <label for="">
+                <input class="input2" type="text" name="search=" placeholder="Search for a content">
+                <button name="search=" class="send-btn2">Enviar</button>
+            </label>
+            <div class="found-items"></div>
+
+        </section> -->
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-    <script type="module" src="./Src/navigation.js"></script>
-    <script type="module" src="./Src/index.js"></script>
+    <script src="./Src/nodes.js"></script>
+    <script src="./Src/index.js"></script>
+    <script src="./Src/navigation.js"></script>
 </body>
 
 </html>

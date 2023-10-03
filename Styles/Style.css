@@ -79,13 +79,13 @@ html {
     font-weight: 400;
 }
 
-.first-time-container div button  {
+.first-time-container div button, .send-btn  {
 
     color: white;
     background-color: black;
     text-decoration: none;
     padding: 10px;
-    font-size: 2rem;
+    font-size: 1rem;
     border-width: 4px;
     border-style: solid;
     border-image: linear-gradient(90deg, #fb1d84 0%, #48abe0 100%) 1;
@@ -93,7 +93,14 @@ html {
 
 
 }
-.main-page button{
+.menu-container{
+    position: absolute;
+    transform: translateX(-100%);
+    font-family: 'Fira Sans', sans-serif;
+    color: white;
+    font-size: 2rem;
+}
+.log-out{
     margin-top: 20px;
     margin-left: 20px;
     color: white;
@@ -117,18 +124,43 @@ html {
 .inactive{
     display: none;
 }
-/* Main Page View */
-.upperSection-content{
+/* Header */
+header{
+    background-color: rgb(59, 10, 59);
+}
+.header-items{
     display: flex;
-    flex-direction: column;
+    font-family: 'Fira Sans', sans-serif;
+    align-items: center;
+    color: white;
+}
+.header-items h1{
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 2rem;
+}
+
+/* Main Page View */
+.upperSection-content, .search-content-items{
+
     color: white;
     font-size: 1.4rem;
     font-weight: 500;
     font-family: 'Fira Sans', sans-serif;
-    justify-content: center;
 }
-.upperSection-content input{
+
+.upperSection-content form,.search-content-items form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.upperSection-content input, .input2{
     width: 80%;
+    color:  white;
     margin: 0 auto;
     padding: 0.5rem 1rem;
     background-image: linear-gradient(90deg, #272727, #272727),
@@ -145,10 +177,32 @@ html {
 }
 
 .searchContent-text{
-    margin: 20px auto;
+    margin: 80px auto 20px auto;
+    width: fit-content;
 
 }
-.main-page-categories {
+.search-results{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+.search-results div h3{
+    color: white;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    font-weight: 500;
+    width: 43%;
+    font-family: 'Fira Sans', sans-serif;
+    }
+.search-results p{
+    color: white;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-family: 'Fira Sans', sans-serif;
+}
+.main-page-categories-items {
     display: flex;
     flex-direction: row;
     margin-top: 30px;
@@ -193,7 +247,7 @@ color: white;
 margin: 50px auto 20px auto;
 font-size: 1.6rem;
 font-weight: 500;
-width: 43%;
+width: fit-content;
 font-family: 'Fira Sans', sans-serif;
 }
 .recommendations-container{
@@ -229,8 +283,13 @@ font-family: 'Fira Sans', sans-serif;
     position: absolute;
     z-index: 3;
     transform:  rotate(180deg);
-    top: 20px;
+    top:40px;
     left: 20px;
+    padding: 3px;
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 14px 6px rgba(0,0,0,0.75);
+    
+
 }
 .selected-movie section img{
     width: 100%;
@@ -305,10 +364,10 @@ font-family: 'Fira Sans', sans-serif;
 /* Categorias */
 .selected-movie-categories{
     display: flex;
+
+    padding: 5px;
     flex-direction: column;
-    text-align: center;
    gap: 10px;
-   word-spacing: 20px;
    margin-top: 20px;
 }
 .Watch-Now{
@@ -351,7 +410,7 @@ font-family: 'Fira Sans', sans-serif;
     font-family: 'Fira Sans', sans-serif;
     color: white;
     margin: 20px auto;
-    width: 40%;
+    width: fit-content;
 }
 
 .category-container{
@@ -387,3 +446,54 @@ font-family: 'Fira Sans', sans-serif;
 #id53 { --idColor: var(--dark-Green); }
 #id10752 { --idColor: var(--darkRed); }
 #id37 { --idColor: var(--dark-Green-2); }
+
+.category-view-container{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Fira Sans', sans-serif;
+}
+.category-view-container h3{
+color:  white;
+font-size: 2rem;
+}
+.category-view-container p{
+    color:  white;
+    font-size: 1.8rem;
+}
+.category-view-container .movie-container, .search-results .movie-container{
+    width: 50%;  
+    margin-top: 10px;  
+}
+.category-view-container .movie-container img, .search-results .movie-container img{
+    width: 90%;    
+}
+
+
+.selected-movie-categories{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    overflow-x:scroll;
+    color: rgb(255, 255, 255);
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: 'Fira Sans', sans-serif;
+}
+.selected-movie-categories::-webkit-scrollbar {
+    width: 1em;
+    height: 0.7em;
+  }
+   
+  .selected-movie-categories::-webkit-scrollbar-track {
+    box-shadow: none
+  }
+   
+  .selected-movie-categories::-webkit-scrollbar-thumb {
+    background-color: #383838;
+    outline: none;
+  }
+.selected-movie-categories div img{
+    height: 150px;
+    width: 100px;
+
+}
